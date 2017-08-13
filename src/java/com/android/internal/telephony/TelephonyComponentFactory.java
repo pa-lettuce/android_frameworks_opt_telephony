@@ -62,7 +62,7 @@ public class TelephonyComponentFactory {
                     ClassLoader.getSystemClassLoader());
             Rlog.d(LOG_TAG, "classLoader = " + classLoader);
 
-            if (fullClsName == null || fullClsName.length() == 0 || libPath == null || libPath.length() == 0) {
+            if (fullClsName == null || fullClsName.length() == 0) {
                 Rlog.d(LOG_TAG, "No customized TelephonyPlugin available, fallback to default");
                 fullClsName = "com.android.internal.telephony.TelephonyComponentFactory";
             }
